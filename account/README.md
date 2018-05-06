@@ -5,16 +5,19 @@ Commands used to create
 ~$ sudo apt-get install nodejs npm
 ~$ npm install - g create-react-app
 ~$ create-react-app account 
-~$ cd account 
+~$ cd account
 ~$ npm start
 
+~$ npm install --save redux
+~$ npm install --save react-redux
+~$ npm install --save-dev redux-devtools
 
 **********
 How to run
 **********
 
 First, you have to install nodejs and npm using:
-sudo apt-get install nodejs npm
+~$ sudo apt-get install nodejs npm
 
 Clone the project on a new folder:
 ~$ mkdir account
