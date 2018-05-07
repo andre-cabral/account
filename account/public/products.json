@@ -1,0 +1,107 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Notebook",
+      "description": "Notebook de 15 polegadas com placa de vídeo.",
+      "imagesUrls": [
+        "/images/products/1a.jpg",
+        "/images/products/1b.jpg",
+        "/images/products/1c.jpg",
+        "/images/products/1d.jpg",
+        "/images/products/1e.jpg"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Notebook 11 polegadas",
+      "description": "Notebook de 11 polegadas com placa de vídeo.",
+      "imagesUrls": [
+        "/images/products/2a.jpg",
+        "/images/products/2b.jpg",
+        "/images/products/2c.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Coca Cola em lata",
+      "description": "Coca Cola em embalagem de metal.",
+      "imagesUrls": [
+        "/images/products/3a.jpg"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Pepsi em lata",
+      "description": "Pepsi em embalagem de metal.",
+      "imagesUrls": [
+        "/images/products/4a.jpg"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Fanta em lata",
+      "description": "Coca Cola em embalagem de metal.",
+      "imagesUrls": [
+        "/images/products/5a.jpg"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Kuat em lata",
+      "description": "Kuat em embalagem de metal.",
+      "imagesUrls": [
+        "/images/products/6a.jpg"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Coca Cola 2 litros",
+      "description": "Coca Cola de 2 litros em embalagem pet.",
+      "imagesUrls": [
+        "/images/products/7a.jpg"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Pepsi 2 litros",
+      "description": "Pepsi de 2 litros em embalagem pet.",
+      "imagesUrls": [
+        "/images/products/8a.jpg"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Fanta 2 litros",
+      "description": "Fanta de 2 litros em embalagem pet.",
+      "imagesUrls": [
+        "/images/products/9a.jpg"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Kuat 2 litros",
+      "description": "Kuat de 2 litros em embalagem pet.",
+      "imagesUrls": [
+        "/images/products/10a.jpg"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Papel toalha",
+      "description": "2 rolos de papel toalha.",
+      "imagesUrls": [
+        "/images/products/11a.jpg"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Bis",
+      "description": "Caixa de chocolate Bis com 10 unidades.",
+      "imagesUrls": [
+        "/images/products/12a.jpg",
+        "/images/products/12b.jpg"
+      ]
+    }
+  ]
+}

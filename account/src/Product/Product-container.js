@@ -1,16 +1,16 @@
 import { connect } from 'react-redux'
-import { fetchClientList } from './Client-actions'
-import Client from './Client-component'
+import { fetchProductList } from './Product-actions'
+import Product from './Product-component'
 
 const mapStateToProps = (state, ownProps) => ({
-  clientName: state.clientName
+  productList: state.productList
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchClientList: () => fetchClientList(dispatch)
+  fetchProductList: () => fetchProductList(dispatch)
 })
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Client)
+)(Product)

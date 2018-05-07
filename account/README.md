@@ -12,6 +12,10 @@ Commands used to create
 ~$ npm install --save react-redux
 ~$ npm install --save-dev redux-devtools
 
+~$ npm install --save ramda
+~$ npm install --save react-router
+~$ npm install --save react-router-dom
+
 **********
 How to run
 **********

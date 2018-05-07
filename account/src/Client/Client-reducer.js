@@ -5,9 +5,15 @@ const initialState = {
 const ClientReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_CLIENT_NAME':
-      return Object.assign({}, state, {
-        clientName: action.clientName
-      })
+      return {
+        ...state, 
+        clientName: action.payload
+      }
+    case 'FETCH_CLIENT_LIST':
+      return {
+        ...state,
+        clientList: action.payload
+      }
     default:
       return state
   }
