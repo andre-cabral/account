@@ -7,9 +7,9 @@ import AddressList from './AddressList/AddressList-container'
 export default props => (
   <BrowserRouter>
     <div>
-      <Route path="/" component={App} />
+      <Route path="/:id" component={App} />
       <Route path="/product" component={Product} />
-      <Route path="/address" component={AddressList} />
+      <Route path="/:id/address" component={AddressList} />
     </div>
   </BrowserRouter>
 )

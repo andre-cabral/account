@@ -1,10 +1,13 @@
 import { connect } from 'react-redux'
+import { pathOr } from 'ramda';
+import { getClientById } from '../Client/Client-helpers';
 import { fetchClientList } from '../Client/Client-actions'
 import { fetchProductList } from '../Product/Product-actions'
 import App from './App-component'
 
 const mapStateToProps = (state, ownProps) => ({
-  clientName: state.clientName
+  client: getClientById(state, pathOr('', ['match', 'params', 'id'], ownProps)),
+  clientId: pathOr('', ['match', 'params', 'id'], ownProps)
 })
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

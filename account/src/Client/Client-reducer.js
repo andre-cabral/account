@@ -1,5 +1,5 @@
 const initialState = {
-  clientName: ''
+  clientList: []
 }
 
 const ClientReducer = (state = initialState, action) => {
