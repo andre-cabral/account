@@ -3,14 +3,9 @@ import { fetchClientList } from './Client-actions'
 import Client from './Client-component'
 
 const mapStateToProps = (state, ownProps) => ({
-  clientName: state.clientName
-})
-
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchClientList: () => fetchClientList(dispatch)
+  clientList: state.clientList
 })
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
 )(Client)

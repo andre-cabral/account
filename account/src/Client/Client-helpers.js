@@ -17,3 +17,13 @@ export function getAddressByClientId (state, id) {
 
   return pathOr([], ['addresses'], client);
 }
+
+export function getOrdersByClientId (state, id) {
+  const clientList = pathOr([], ['client', 'clientList'], state);
+
+  const client = clientList.find(function(element) {
+    return element.id === id;
+  });
+
+  return pathOr([], ['orders'], client);
+}

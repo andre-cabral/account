@@ -1,16 +1,12 @@
-import { connect } from 'react-redux'
-import { fetchProductList } from './Product-actions'
-import Product from './Product-component'
+import { connect } from 'react-redux';
+import { pathOr } from 'ramda';
+import Product from './Product-component';
+import { getProductById } from './Product-helpers';
 
 const mapStateToProps = (state, ownProps) => ({
-  productList: state.productList
-})
-
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchProductList: () => fetchProductList(dispatch)
+  product: getProductById(state, pathOr('', ['id'], ownProps))
 })
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
 )(Product)
