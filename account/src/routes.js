@@ -4,6 +4,7 @@ import App from './App/App-container';
 import Product from './Product/Product-container';
 import AddressList from './AddressList/AddressList-container'
 import Orders from './Orders/Orders-container'
+import Wishlist from './Wishlist/Wishlist-container'
 
 export default props => (
   <BrowserRouter>
@@ -12,6 +13,7 @@ export default props => (
       <Route path="/product" component={Product} />
       <Route path="/:id/address" component={AddressList} />
       <Route path="/:id/orders" component={Orders} />
+      <Route path="/:id/wishlist" component={Wishlist} />
     </div>
   </BrowserRouter>
 )

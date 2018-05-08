@@ -27,3 +27,13 @@ export function getOrdersByClientId (state, id) {
 
   return pathOr([], ['orders'], client);
 }
+
+export function getWishlistByClientId (state, id) {
+  const clientList = pathOr([], ['client', 'clientList'], state);
+
+  const client = clientList.find(function(element) {
+    return element.id === id;
+  });
+
+  return pathOr([], ['wishlistProductsIds'], client);
+}
