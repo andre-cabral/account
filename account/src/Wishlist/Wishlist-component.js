@@ -7,7 +7,6 @@ class Wishlist extends Component {
       return (
         <div className="wishlist">
           { this.props.wishlist.map( (id, index) => {
-            console.log(id)
             return (
               <Product key={`${index}wishlist-product`} id={id} />
             )

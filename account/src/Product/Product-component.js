@@ -11,9 +11,9 @@ class Product extends Component {
         <p className="product-description">
           { pathOr('', ['description'], this.props.product) }
         </p>
-        {  pathOr([], ['imagesUrls'], this.props.product).map( imageUrl => {
+        {  pathOr([], ['imagesUrls'], this.props.product).map( (imageUrl, index) => {
           return (
-            <img src={imageUrl} alt={pathOr('', ['name'], this.props.product)} />
+            <img key={`${index}productImage`} src={imageUrl} alt={pathOr('', ['name'], this.props.product)} />
           )
         } ) }
       </div>
